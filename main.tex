@@ -1,0 +1,157 @@
+
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}%{1C033C}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+% \usepackage{times}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Aditya Kumar Gupta} \\[6pt]
+\\
+\textcolor[HTML]{371e77}{\underline{\href{mailto:ag2532460@gmail.com}{\raisebox{-0.05\height}{\faEnvelope} ag2532460@gmail.com}} $|$}
+\textcolor[HTML]{371e77}{\underline{\href{mailto:aditya.2024ec1188@kiet.edu}{\raisebox{-0.05\height}{\faEnvelope} aditya.2024ec1188@kiet.edu}} $|$}
+\textcolor[HTML]{371e77}{\href{tel:+918318354172}{\raisebox{-0.05\height}{\faMobile} +918318354172}}
+
+\textcolor[HTML]{371e77}{\underline{\href{https://github.com/adityaec2024}{\raisebox{-0.05\height}{\faGithub} github.com/adityaec2024}} $|$}
+\textcolor[HTML]{371e77}{\underline{\href{https://www.linkedin.com/in/aditya-kumar-gupta-44671123b/}{\raisebox{-0.05\height}{\faLinkedin} linkedin.com/in/aditya-kumar-gupta-44671123b/}}}
+\end{tabularx}
+
+% Education
+\section{Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{KIET Group of Instituions} & \hfill \color[HTML]{371e77} Expected graduation date: Jun. 2024 \\
+\color[HTML]{371e77} B.Tech. in Electronics and Communication Engineering  & \hfill \color[HTML]{4B28A4} \textit{\textbf{Percentage: 73.58}} \\
+\color[HTML]{1C033C} \textbf{Kisan Intermediate College} & \hfill \color[HTML]{371e77}  \\
+\color[HTML]{371e77} Senior Secondary(CBSE)  & \hfill \color[HTML]{4B28A4} \textit{\textbf{Percentage: 60.00}} \\
+\color[HTML]{1C033C} \textbf{P.G. Senior Secondary School} & \hfill \color[HTML]{371e77} \\
+\color[HTML]{371e77} Secondary(UP Board)  & \hfill \color[HTML]{4B28A4} \textit{\textbf{Percentage: 74.10}} \\
+\end{tabularx}
+
+
+%Experience
+\section{Internship}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\uline{\href{https://adityaec2024.github.io/MyPortfolio/}{IBM(Virtual)}}} \hfill \color[HTML]{371e77} 12th June,2023  -  24th July,2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Frontend Development}}\ \hfill \color[HTML]{4B28A4} \textit{HTML and CSS} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Responsible for developing Frontend web applications based on HTML, CSS and JavaScript.
+        \item Independently tackled the challenge of crafting a responsive 
+  website tailored for mobile platforms, and meticulously refined the CSS to achieve a more polished and efficient design.
+        \item Learnt how to deploy web applications.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+% Projects
+\section{Projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{{}{Amazon Clone}}} \hfill \color[HTML]{371e77} Jul. 2023 - Ongoing \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{ Amazon clone web app }} \hfill \color[HTML]{4B28A4} \textit{ HTML and CSS} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Developed a fully functional Amazon clone web app using HTML and CSS.
+        \item Ensured seamless user experience across devices by implementing responsive design.
+        \item Demonstrated strong front-end skills while working on a complex project.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{\href{https://adityaec2024.github.io/MyPortfolio/}{Portfolio Website}}} \hfill \color[HTML]{371e77} June 2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Responsive Portfolio Website}} \hfill \color[HTML]{4B28A4} \textit{  HTML and CSS} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Responsive Design: The website is designed to adapt to various screen sizes, ensuring a great user experience on both mobile and desktop devices.
+        \item Interactive Content: Engage your visitors with interactive content, including smooth scrolling, animated sections, and dynamic skill bars.
+        \item About Me Section: Share your background, skills, and experience to give visitors a better understanding of who you are.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{\uline{\href{https://github.com/adityaec2024/Automated-Watering-Plant}{Automated Watering Plant}}} \hfill \color[HTML]{371e77} Jan 2023 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{ A Cutting-edge Automated Watering System}} \hfill \color[HTML]{4B28A4} \textit{ Nano Arduino, Relay, and Soil Moisture sensors} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Implemented a cutting-edge automated watering system that delivers moisture to plants at specific intervals.
+        \item Designed to optimize plant growth by ensuring they receive water only when needed.
+        \item Streamlined plant care and minimized the risk of over or under-watering.
+        \item Demonstrated a proficiency in working with trending technologies in the field of plant care.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+\section{Skills}
+\color[HTML]{1C033C}\textbf{Languages:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex} : C, C++, HTML, CSS\\[3pt]
+\color[HTML]{1C033C}\textbf{Oother Skills:} \\[2pt]
+\color[HTML]{371e77} \hspace*{4ex} : Competitive Programming, Data Structures, Algorithm, OOPS, DBMS, Basics of CN\\[3pt]
+
+\section{Awards and Achievements}
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Geeksforgeeks handle:\color[HTML]{1C033C} \textbf{\uline{\href{https://auth.geeksforgeeks.org/user/aditya2024ec1188/practice}{ aditya2024ec}}} (110+ Question Solved), 95+ Days Daily Streak
+        \item LeetCode handle: \color[HTML]{1C033C} \textbf{\uline{\href{https://leetcode.com/GuptaAditya/}{  GuptaAditya/}}} (220+ Question Solved), 180+ Days Daily Streak
+          \item Hackerrank handle: \color[HTML]{1C033C} \textbf{\uline{\href{https://www.hackerrank.com/profile/aditya_2024ec111}{aditya2024}}} 5 Star at C++
+            \item Achieved 9th rank in KICCS-D-HACK (Intra college coding competition) at college level. \color[HTML]{1C033C} \textbf{\uline{\href{https://drive.google.com/drive/folders/15AbsP8XsAV-0P0dnc_scWvhQ8lN_f9Te}{(link)}}}
+         \item Achieved 1st rank in KICCS-D-HACK (Intra College Coding Competition) at Department Level.\color[HTML]{1C033C} \textbf{\uline{\href{https://drive.google.com/file/d/1sx484v3mJco3uMW3SRO0vheVhteHdej2/view}{(link)}}}
+          \item Participated in college INNOTECH.\color[HTML]{1C033C} \textbf{\uline{\href{https://drive.google.com/file/d/1ZzpOOnrAgG7Rz4Oe_1szO-2hdGB0emJZ/view}{(link)}}}\color[HTML]{1C033C} \textbf{\uline{\href{https://drive.google.com/file/d/1x053AQw_YBLsiAtNdGqWPba4uYvAWS6U/view}{(link)}}}
+    \end{itemize}
+    \end{minipage}
+\end{document}
